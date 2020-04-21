@@ -20,6 +20,10 @@ apt install python3-pyqt5
 python3 Login.py
 ```
 
+## Note
+
+Make sure your gmail account enabled **Less Secure Apps**
+
 ## Release History
 
 * 0.0.1
