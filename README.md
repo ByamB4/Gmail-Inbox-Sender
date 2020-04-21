@@ -28,5 +28,3 @@ Make sure your gmail account enabled **Less Secure Apps**
 
 * 0.0.1
     * Released first version with buggy
-    
-<a href="https://giphy.com/gifs/XbmDOkzpr85gUQzkIi">via GIPHY</a></p>
