@@ -1,10 +1,6 @@
 # Gmail Inbox Sender
 > Get latest 5 mails and send mail with file
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url
-
 ## Installation
 
 OS X & Linux:
