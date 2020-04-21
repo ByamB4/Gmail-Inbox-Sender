@@ -1,4 +1,4 @@
-# Gmail Inbox Sender
+# Mail Inbox Sender
 > Byambadalai Sumiya | April 21th 2020
 -----------------
 
