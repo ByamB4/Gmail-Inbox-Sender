@@ -1,5 +1,6 @@
 # Gmail Inbox Sender
-> Get latest 5 mails and send mail with file
+> Byambadalai Sumiya | April 21th 2020
+-----------------
 
 ## Installation
 
@@ -11,6 +12,12 @@ pip3 install -r requirements.txt
 apt install qttools5-dev-tools
 apt install python3-pyqt5.qtsql
 apt install python3-pyqt5
+```
+
+## Usage
+
+```python
+python3 Login.py
 ```
 
 ## Release History
