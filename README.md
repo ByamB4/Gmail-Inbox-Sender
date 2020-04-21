@@ -29,4 +29,4 @@ Make sure your gmail account enabled **Less Secure Apps**
 * 0.0.1
     * Released first version with buggy
 
-![Inbox GIF](https://github.com/ByamB4/Mail-Inbox-Sender/blob/master/gif/3xh3r3.gif)
+![Inbox GIF](https://github.com/ByamB4/Mail-Inbox-Sender/blob/master/inbox.gif)
