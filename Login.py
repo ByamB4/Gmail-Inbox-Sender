@@ -5,7 +5,6 @@ from Inbox import Ui_InboxWindow
 DEBUG = True
 
 class Ui_LoginWindow(object):
-
     def setupUi(self, LoginWindow):
         LoginWindow.setObjectName("LoginWindow")
         LoginWindow.resize(475, 412)
@@ -30,14 +29,15 @@ class Ui_LoginWindow(object):
         self.lblTextLogin.setStyleSheet("color: rgb(32, 33, 36);")
         self.lblTextLogin.setObjectName("lblTextLogin")
         self.imGoogle = QtWidgets.QLabel(self.centralwidget)
-        self.imGoogle.setGeometry(QtCore.QRect(190, 20, 101, 41))
+        self.imGoogle.setGeometry(QtCore.QRect(360, 10, 61, 101))
         self.imGoogle.setText("")
-        self.imGoogle.setPixmap(QtGui.QPixmap("img/google.jpg"))
+        self.imGoogle.setPixmap(QtGui.QPixmap("UI/../img/shutis.png"))
         self.imGoogle.setObjectName("imGoogle")
         self.accountInput = QtWidgets.QLineEdit(self.centralwidget)
         self.accountInput.setGeometry(QtCore.QRect(40, 130, 411, 61))
         font = QtGui.QFont()
         font.setFamily("Roboto,RobotoDraft,Helvetica,Arial,sans-serif")
+        font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -62,6 +62,7 @@ class Ui_LoginWindow(object):
         self.passwordInput.setGeometry(QtCore.QRect(40, 230, 411, 61))
         font = QtGui.QFont()
         font.setFamily("Roboto,RobotoDraft,Helvetica,Arial,sans-serif")
+        font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
@@ -82,6 +83,7 @@ class Ui_LoginWindow(object):
         self.label_2.setObjectName("label_2")
         self.btnLoginAccount = QtWidgets.QPushButton(self.centralwidget)
         self.btnLoginAccount.setGeometry(QtCore.QRect(349, 330, 101, 28))
+        self.btnLoginAccount.clicked.connect(self.loginAccount)
         font = QtGui.QFont()
         font.setFamily("Sans Serif")
         font.setPointSize(11)
@@ -92,7 +94,6 @@ class Ui_LoginWindow(object):
         self.btnLoginAccount.setStyleSheet("color: rgb(255, 255, 255);\n"
 "background-color: rgb(26, 115, 232);")
         self.btnLoginAccount.setObjectName("btnLoginAccount")
-        self.btnLoginAccount.clicked.connect(self.loginAccount)
         self.btnCreateAccount = QtWidgets.QPushButton(self.centralwidget)
         self.btnCreateAccount.setGeometry(QtCore.QRect(40, 330, 90, 28))
         font = QtGui.QFont()
@@ -125,10 +126,9 @@ class Ui_LoginWindow(object):
         self.btnLoginAccount.setText(_translate("LoginWindow", "Нэвтрэх"))
         self.btnCreateAccount.setToolTip(_translate("LoginWindow", "Үүнийг дарж шинэ хаяг нээнэ үү"))
         self.btnCreateAccount.setText(_translate("LoginWindow", "Хаяг нээх"))
-
     def loginAccount(self):
         self.username, self.password = self.accountInput.text(), self.passwordInput.text()
-        if DEBUG: 
+        if DEBUG:
             print('[+] Trying to login')
             print(f'\tUsername: {self.username}')
             print(f'\tPassword: {self.password}')
@@ -142,7 +142,6 @@ class Ui_LoginWindow(object):
         else:
             if DEBUG: print('[+] Login successfully')
             self.openInboxWindow()
-
     def createAccount(self):
         import webbrowser
         if DEBUG: print('[+] Opening new browser')
