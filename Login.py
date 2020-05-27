@@ -4,6 +4,7 @@ from Inbox import Ui_InboxWindow
 # LOCAL CONFIG
 DEBUG = True
 
+
 class Ui_LoginWindow(object):
     def setupUi(self, LoginWindow):
         LoginWindow.setObjectName("LoginWindow")
@@ -11,7 +12,7 @@ class Ui_LoginWindow(object):
         LoginWindow.setMinimumSize(QtCore.QSize(475, 412))
         LoginWindow.setMaximumSize(QtCore.QSize(475, 412))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("img/icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("./img/favicon.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         LoginWindow.setWindowIcon(icon)
         LoginWindow.setStyleSheet("* {\n"
 "    background-color: white;\n"
@@ -19,19 +20,10 @@ class Ui_LoginWindow(object):
 "")
         self.centralwidget = QtWidgets.QWidget(LoginWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.lblTextLogin = QtWidgets.QLabel(self.centralwidget)
-        self.lblTextLogin.setGeometry(QtCore.QRect(190, 60, 111, 41))
-        font = QtGui.QFont()
-        font.setFamily("Sans Serif")
-        font.setPointSize(18)
-        font.setItalic(False)
-        self.lblTextLogin.setFont(font)
-        self.lblTextLogin.setStyleSheet("color: rgb(32, 33, 36);")
-        self.lblTextLogin.setObjectName("lblTextLogin")
         self.imGoogle = QtWidgets.QLabel(self.centralwidget)
-        self.imGoogle.setGeometry(QtCore.QRect(360, 10, 61, 101))
+        self.imGoogle.setGeometry(QtCore.QRect(10, 10, 451, 101))
         self.imGoogle.setText("")
-        self.imGoogle.setPixmap(QtGui.QPixmap("UI/../img/shutis.png"))
+        self.imGoogle.setPixmap(QtGui.QPixmap("./img/shutis.png"))
         self.imGoogle.setObjectName("imGoogle")
         self.accountInput = QtWidgets.QLineEdit(self.centralwidget)
         self.accountInput.setGeometry(QtCore.QRect(40, 130, 411, 61))
@@ -67,7 +59,6 @@ class Ui_LoginWindow(object):
         font.setItalic(False)
         font.setWeight(50)
         font.setStrikeOut(True)
-        font.setKerning(False)
         self.passwordInput.setFont(font)
         self.passwordInput.setStyleSheet("padding-left: 15px;\n"
 "font:  400 16px Roboto,RobotoDraft,Helvetica,Arial,sans-serif")
@@ -84,6 +75,7 @@ class Ui_LoginWindow(object):
         self.btnLoginAccount = QtWidgets.QPushButton(self.centralwidget)
         self.btnLoginAccount.setGeometry(QtCore.QRect(349, 330, 101, 28))
         self.btnLoginAccount.clicked.connect(self.loginAccount)
+
         font = QtGui.QFont()
         font.setFamily("Sans Serif")
         font.setPointSize(11)
@@ -96,6 +88,8 @@ class Ui_LoginWindow(object):
         self.btnLoginAccount.setObjectName("btnLoginAccount")
         self.btnCreateAccount = QtWidgets.QPushButton(self.centralwidget)
         self.btnCreateAccount.setGeometry(QtCore.QRect(40, 330, 90, 28))
+        self.btnCreateAccount.clicked.connect(self.createAccount)
+
         font = QtGui.QFont()
         font.setFamily("Sans Serif")
         font.setPointSize(12)
@@ -105,7 +99,6 @@ class Ui_LoginWindow(object):
         self.btnCreateAccount.setStyleSheet("color: rgb(26, 115, 232);")
         self.btnCreateAccount.setFlat(True)
         self.btnCreateAccount.setObjectName("btnCreateAccount")
-        self.btnCreateAccount.clicked.connect(self.createAccount)
         LoginWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(LoginWindow)
         self.statusbar.setObjectName("statusbar")
@@ -116,8 +109,7 @@ class Ui_LoginWindow(object):
 
     def retranslateUi(self, LoginWindow):
         _translate = QtCore.QCoreApplication.translate
-        LoginWindow.setWindowTitle(_translate("LoginWindow", "Gmail нэвтрэх"))
-        self.lblTextLogin.setText(_translate("LoginWindow", "Нэвтрэх"))
+        LoginWindow.setWindowTitle(_translate("LoginWindow", "Мэйл нэвтрэх"))
         self.accountInput.setPlaceholderText(_translate("LoginWindow", "Хэрэглэгчийн нэрээ оруулна уу"))
         self.label.setText(_translate("LoginWindow", "Email"))
         self.passwordInput.setPlaceholderText(_translate("LoginWindow", "Нууц үгээ оруулна уу"))

@@ -28,3 +28,6 @@ Make sure your gmail account enabled **Less Secure Apps**
 
 * 0.0.1
     * Released first version with buggy
+* 0.0.2 (2020-05-27)
+    * Added SICT logo on homepage
+    * Resized Inbox window size

@@ -23,11 +23,11 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Gmail нэвтрэх</string>
+   <string>Мейл нэвтрэх</string>
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>img/icon.png</normaloff>img/icon.png</iconset>
+    <normaloff>../../../../Downloads/favicon.ico</normaloff>../../../../Downloads/favicon.ico</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">* {
@@ -36,35 +36,12 @@
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="lblTextLogin">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>60</y>
-      <width>111</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Sans Serif</family>
-      <pointsize>18</pointsize>
-      <italic>false</italic>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(32, 33, 36);</string>
-    </property>
-    <property name="text">
-     <string>Нэвтрэх</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="imGoogle">
     <property name="geometry">
      <rect>
-      <x>360</x>
+      <x>10</x>
       <y>10</y>
-      <width>61</width>
+      <width>451</width>
       <height>101</height>
      </rect>
     </property>
@@ -152,6 +129,7 @@ color: #80868b;</string>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
+      <strikeout>true</strikeout>
      </font>
     </property>
     <property name="styleSheet">

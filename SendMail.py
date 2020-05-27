@@ -45,14 +45,14 @@ class Ui_ComposeWindow(object):
             print(f'[-] Error on login: {e}')
             sys.exit(0)
         print('[+] Successfully sent')
-        
+
     def setupUi(self, ComposeWindow):
         ComposeWindow.setObjectName("ComposeWindow")
         ComposeWindow.resize(391, 330)
         ComposeWindow.setMinimumSize(QtCore.QSize(391, 330))
         ComposeWindow.setMaximumSize(QtCore.QSize(391, 330))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("img/icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("./img/favicon.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         ComposeWindow.setWindowIcon(icon)
         ComposeWindow.setStyleSheet("* {\n"
 "    background-color: white;\n"
